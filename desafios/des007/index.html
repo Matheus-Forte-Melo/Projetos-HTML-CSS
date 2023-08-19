@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexiveis</title>
+    <link rel="shortcut icon" href="../des002/images/icone.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem Flexivel!</h1>
+    <p>Será que você está vendo a imagem inteira? tente redimensionar a pagina horizontalmente e veja! &#x1F440;</p>
+    <picture>
+        <source media="(max-width: 550px)" srcset="images/imagem-pp.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="images/imagem-p.png" type="image/png">
+        <source media="(max-width: 1600px)" srcset="images/imagem-m.png" type="image/png">
+        <img src="images/imagem-g.png" alt="Imagem ajustável">
+    </picture>
+
+</body>
+</html>

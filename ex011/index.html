@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia e Tals</title>
+    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Redimencione a janela para ver a mágica acontecer!</p>
+
+    <picture> <!--O parametro picture dá maior controle de "compatibilidade" de imagens-->
+        <source media="(max-width: 750px )" srcset="images/imagem-p.png" type="image/png"> <!--Exibe essa imagem para telas de até 750 pixeis de largura-->
+        <source media="(max-width: 1025px)" srcset="images/imagem-m.png" type="image/png"> <!--Exibe essa imagem para telas de até 1025 pixeis de largura-->
+        <img src="images/imagem-g.png" alt="Imagem que se adapta"> <!--Exibe essa imagem caso a tela for maior que 1025 pixeis,porque não cai em nenhuma "condição"-->
+    </picture>
+
+    <h1>Audio</h1>
+    <p>Se liga nessa pedrada de OST! - Triage at Dawn de Half-Life 2</p>
+    <!--<audio controls src="audio/Triage at Dawn (128 kbps).mp3"></audio> |--> 
+    <!--Assim como a tag picture, a tag AUDIO (sem o src imbutido) dá maior controle de "compatibilidade" dos audios -->
+    <audio controls loop>
+        <!--Outros parametros: autoplay, loop, preload (metadata, auto [PADRÂO], none)-->
+        <source src="audio/Triage at Dawn (128 kbps).mp3" type="audio/mpeg">
+        <source src="audio/Triage at Dawn (128 kbps).mp3" type="audio/wav">
+        <p>Seu navegador infelizmente não consegue carregar esse arquivo. DOWNLOAD - <a rel="download" href="audio/Triage at Dawn (128 kbps).mp3"></a></p>
+    </audio> 
+
+    <h1>Videos</h1>
+    <video> 
+        
+    </video>
+
+    
+</body>
+</html>
