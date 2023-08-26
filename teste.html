@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body {
+            background-color: rgb(31, 30, 30);
+        }
+
+        h1 {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste Anchor com imagens dinâmicas</h1>
+    <a href="https://github.com/Melao12125">
+        <picture>
+            <source media="(max-width: 700px)" srcset="ex011/images/imagem-p.png" type="image/png">
+            <source media="(max-width: 1000px)" srcset="ex011/images/imagem-m.png" type="image/png">
+            <img src="ex011/images/imagem-g.png" alt="">
+        </picture>
+    </a>
+</body>
+</html>
