@@ -1,0 +1,33 @@
+body {
+    background-color: #112620;
+}
+
+h1 {
+    color: #0D0D0D;
+}
+
+h2 {
+    color: #0D0D0D;
+}
+
+p {
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.734);
+}
+
+mark {
+    background-color: #BF4259;;
+}
+
+a {
+    color: #d64b64;
+}
+
+a:visited {
+    color: #d64b64;
+
+}
+
+a:hover {
+    color: #BF4259;
+}
