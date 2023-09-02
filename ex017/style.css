@@ -23,3 +23,11 @@ p {
     text-align: center;
 }
 
+a, a:visited {
+    color: #2f7e58;
+}
+
+a:hover {
+    color: #55828B;
+}
+

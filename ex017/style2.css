@@ -1,0 +1,33 @@
+body {
+    background-image: linear-gradient(to right, #9D4396, #d68ce5 80%);
+}
+
+main {
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F7F0F0;
+    width: 20cm;
+    box-shadow: 8px 8px 6px #9d4396c9;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #47b357;
+    text-shadow: 0.7px 0.7px 0.6px#276330;
+}
+
+a, a:visited {
+    color: #47b357;
+}
+
+a:hover {
+    color: #10b329;
+}
+
+p {
+    text-align: center;
+    /* Medidas Absolutas */
+
+    /* Medidas Relativas*/
+}
