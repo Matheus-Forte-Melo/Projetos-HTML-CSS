@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Special+Elite&family=UnifrakturMaguntia&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Fonte Pica";
+    src: url(fonts/brodies.ttf) format(truetype);
+    src: url(fonts/brodies.ttf) format(opentype); /*Seila porra, dentro do arquivo ta dizendo que ttf e otf*/
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Id (Usar apenas um por pagina.) */
+
+#continue {
+    text-indent: 20px;
+    font-family: "Fonte Pica", 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}
+
+/* Classes */
+
+.good {
+    color: #18c463;
+}
+
+.mediocre {
+    color: #aac418;
+}
+
+.bad {
+    color: #c47718d6;
+}
+
+.notplayed {
+    color: #202e2687;
+}
+
+/* Configs */
+
+a, a:visited {
+    color: #198645;
+}
+
+body {
+    background-color: #60f8c586;
+}
+
+h1 {
+    color: #247559;
+    font-size: 3em
+}
+
+h2 {
+    color: #1e996e;
+    font-size: 1.80em
+}
+
+p, li {
+    font-family: 'Work Sans','Trebuchet MS', sans-serif;
+    font-size: 1.15em
+}
