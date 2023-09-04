@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=UnifrakturMaguntia&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1 {
+    color: #443d3d;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px #242020;
+}
+
+p {
+    color: #2f2a2a;
+    /*font-style: italic;
+    font-weight: normal;
+    font-size: 1.5em; 27px 
+    font-family: 'Special Elite', 'Trebuchet MS', 'Sagoe UI', sans-serif; */
+
+    font: italic normal 1.5em 'Special Elite', sans-serif; /* estilo peso tamanho familia */
+    text-align: justify;
+    text-indent: 1em;
+}  
