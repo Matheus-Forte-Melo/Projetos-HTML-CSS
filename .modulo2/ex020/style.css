@@ -1,0 +1,89 @@
+
+/* Configurações Gerais */
+
+body {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+p {
+    text-indent: 2px;
+}
+
+div {
+    display: inline-block;
+    border: 2px solid #1c68bf; /* Shorthand para borda: Tamanho, estilo, cor  */
+    background-color: #e8470cf3;
+    width: 150px;
+    height: 150px;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+/* Pseudo-Classes Gerais */
+
+div:hover {
+    background-color: #1c68bf;
+}
+
+div:active {
+    background-color: #e8470cf3;
+}
+
+a, a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #1361ba;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2878d4;
+}
+
+/* Id "D" e "b" */
+
+div#d {
+    color: #0a2b39;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+}
+
+div#d:active {
+    background-color: #1c68bf; /* Garante que esse div não mude quando "active" */
+}
+
+a#b:active, a#b:visited{
+    color: black;
+}
+
+a#b {
+    font-weight: normal;
+}
+
+/* Dinâmica legal de hover usando o ID "D" */
+div#d > p, div#d > img { /* Usar o > só edita o que está dentro da DIV */
+    display: none;
+}
+
+div#d:hover > p, div#d:hover > img {
+    display: inline-block; /* Descobri na cagada mas isso aqui previne um bugzinho maroto, tire para testar. */
+}
+
+/* Pseudo-elementos da classe "importante" */
+
+a.importante::after {
+    content: ' ♥';
+}
+
+a.importante::before {
+    content: '→ ';
+}
