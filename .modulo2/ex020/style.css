@@ -1,13 +1,8 @@
-
 /* Configurações Gerais */
 
 body {
     font-family: 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
-}
-
-p {
-    text-indent: 2px;
 }
 
 div {
@@ -48,7 +43,7 @@ a:hover {
     color: #2878d4;
 }
 
-/* Id "D" e "b" */
+/* Id "d" e "b" */
 
 div#d {
     color: #0a2b39;
@@ -87,3 +82,18 @@ a.importante::after {
 a.importante::before {
     content: '→ ';
 }
+
+/* Teste com a parada inline */
+
+span {
+    color: #177fe8;
+}
+
+p > span {
+    display: none;
+}
+
+div:hover + p > span {
+    display: inline-block;
+}
+
