@@ -2,6 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Special+Elite&family=UnifrakturMaguntia&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --cor-1: #a2d1b8;
+    --cor0: #84E0AD;
+    --cor1: #35BF72;
+    --cor2: #2A9559;
+    --cor3: #1A5C38;
+    --cor4: #14472b;
+
+    --fontePrincipal: normal normal 1.1em Calibri, 'Trebuchet MS', sans-serif;
+    --fonteNormal: normal normal 1em "Arial Narrow", sans-serif;;
+    --fonteTituloH1: normal normal 2em "Tech";
+    --fonteTituloH2: normal normal 1.4em "Tech";
+    --fonteHeader: normal normal 3em "Bebas Neue", sans-serif;;
+}
+
 @font-face {
     font-family: "Tech";
     src: url(fontes/idroid.otf) format(opentype);
@@ -9,76 +24,85 @@
     font-weight: normal;
 }
 
+/* Seletor Global
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+*/
+
 body {
-    background-color: #84E0AD;
+    background-color: var(--cor0);
     margin: 0px;
 }
 
 header.header1 {
     padding: 20px 20px 20px 20px;
-    background-image: linear-gradient(to bottom, #35BF72, #2A9559, #1A5C38);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3));
     text-align: center;   
 }
 
 h1.header1 {
-    font: normal normal 3em "Bebas Neue", sans-serif;
+    font: var(--fonteHeader);
     text-shadow: 1.6px 1.5px 1.5px #154d2fb1;
 }
 
 p.header1 {
-    font: normal normal 1em "Arial Narrow", sans-serif;
+    text-shadow: 1px 1px 1px#14472b8e;
+    font: var(--fonteNormal);
 }
 
 p.header1, h1.header1 {  
     margin: 10px 0px 0px 0px;
-    color: #FFFFFF;
+    color: white;
 }
 
 nav.header1 {
     text-align: left ;
-    background-color: #1a5c38;
-    box-shadow: 0px 3px 4px #154d2fb7;
+    background-color: var(--cor3);
+    box-shadow: 0px 3px 4px #154d2fb7; /* Nao usarei variaveis em cores de sombra pq pregas */
 }
 
 nav.header1 > a {
     text-align: center;
     display: inline-block;
-    color: #49d789;
+    color: var(--cor1);
     text-decoration: none;
     margin: 10px 10px 10px 10px;
-    font: normal normal 1em "Arial Narrow", sans-serif;
+    font: var(--fonteNormal);
 }
 
 nav.header1 > a:hover {
-    background-color: #154d2f;
+    background-color: var(--cor4);
     border-radius: 5px;
 }
 
+/* Aqui configuro pelo Article, mas dava de configurar as mesmas coisas pelo main*/
 article {
-    box-shadow: 0px 11px 5px #154d2fa3    ;
-    background-color: #FFFFFF;
+    box-shadow: 0px 11px 5px #113d2561    ;
+    background-color: white;
     width: 1250px; /* A ser mudado */
     margin: auto;   
 }
 
 article#main > h1 {
-    color: #1d6a41;
+    color: var(--cor3);
     margin: 0px 20px 20px 20px;
     padding: 20px 0px 20px 20px;
-    font: normal normal 2em "Tech";
+    font: var(--fonteTituloH1);
 }
 
 article#main > h2 {
-    color: #1d6a41;
+    color: var(--cor3);
     padding: 0px 20px 0px 20px;
     margin: 20px 20px 20px 20px;
-    font: normal normal 1.4em "Tech";
-    background-image: linear-gradient(to right, #5ae29588, #ffffff);
+    font: var(--fonteTituloH2);
+    background-image: linear-gradient(to right, var(--cor0), white);
 }
 
 article#main > p {
     padding: 0px 20px 0px 20px;
-    font: normal normal 1.1em Calibri, 'Trebuchet MS', sans-serif;
+    font: var(--fontePrincipal);
     text-indent: 25px;
 }
 
@@ -88,7 +112,7 @@ img {
 }
 
 div#video {
-    background-color: #154d2f;
+    background-color: var(--cor4);
 
 }
 
@@ -100,8 +124,8 @@ div#video iframe {
 
 aside {
     border-radius: 5px 5px 5px 5px;
-    background-color: #8cf0b98f;
-    width: 700px;
+    background-color: var(--cor0);
+    width: 1000px;
     margin: auto;
     margin-top: 20px;
     box-shadow: 1px 0px 2px #0c2d1c9f;
@@ -119,13 +143,13 @@ ul {
 
 header#header2 {
     border-radius: 5px 5px 0px 0px;
-    background-color: #23814f;
+    background-color: var(--cor2);
     margin: 0px;
 }
 
 header#header2 p {
     padding: 7px;
-    font: normal bold 1em "Arial Narrow", sans-serif;
+    font: var(--fonteNormal);
     color: white;
 }
 
@@ -136,7 +160,15 @@ abbr {
 footer {
     margin-top: 15px;
     text-align: center;
-    color: #FFFFFF;
+    color: white;
     padding: 15px;
-    background-color: #154d2f;
+    background-color: var(--cor3);
+}
+
+p > strong {
+    color: var(--cor3);
+}
+
+#header2 strong {
+    color: white;
 }
