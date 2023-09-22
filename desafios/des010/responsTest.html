@@ -8,17 +8,19 @@
         body {
             background-color: gray;
         }
-        main {
+
+        article {
             background-color: whitesmoke;
             padding: 10px;
             border-radius: 10px;
-            min-width: 380px; /* Nada abaixo disso sera responsivo*/
-            max-width: 800px; /* A largura maxima cujo a div ocupará, não ocupará nada alem disso, e todos os elementos dentro desta div, quando abaixo desse valor, se ajustarão (menos alguns, tipo imagens, com isso podemos usar porcentagem, dependendo da imagem, ou botar duas imagens diferentes para demasiadas larguras de tela, também podemos combinar os dois para ter uma transição mais legalzinha entre uma imagem pequena e uma grande) */
-            margin: auto; 
+            min-width: 380px;
+            max-width: 800px;
+             /* A largura maxima cujo a div ocupará, não ocupará nada alem disso, e todos os elementos dentro desta div, quando abaixo desse valor, se ajustarão (menos alguns, tipo imagens, com isso podemos usar porcentagem, dependendo da imagem, ou botar duas imagens diferentes para demasiadas larguras de tela, também podemos combinar os dois para ter uma transição mais legalzinha entre uma imagem pequena e uma grande) */
+            margin: auto  ;
         }
         
         img { /* Usar img invez de picture para editar isso aqui*/ 
-            width: 100%; /* Porcentagem */
+            width: 100%; /* Ocupa 100% do que ele pode ocupar, quando passa do falor max width, redimensiona e ocupa 100% do que pode ocupar */
             display: block; /* Faz com que seja possivel centralizar a imagem */
             margin: auto; /* Centraliza a imagem */
             /* Como mencionei, da de usar os dois metodos em conjunto, a criatividade reina. Pode-se usar só a porcentagem, ou usar so a centralização. Nesse caso, o uso do width se ajusta a todo instante e quando ele ultrapassa o max-width: 800px; ele troca de imagem, fazendo uma transição mais suave, louco né?*/
@@ -27,17 +29,19 @@
 </head>
 <body>
     <main>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga ex vitae sapiente, quo maiores modi perferendis neque iste unde repellendus totam. Ipsam porro nulla eligendi fuga quibusdam rerum vitae omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, deserunt, fuga quam voluptatem quibusdam illo, sit quia vitae ullam veniam nulla dicta! Totam expedita recusandae blanditiis pariatur amet dolores temporibus.
-        </p>
-        <picture>
-            <source media="(max-width: 635px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpeg">
-            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
-        </picture>
-        
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro mollitia fugit magni dolores facilis officiis eveniet, excepturi at sequi ducimus architecto. Incidunt maiores aut eius adipisci ea voluptas sequi cupiditate accusantium hic facere temporibus quasi ad, eaque totam, nam, ab omnis! Placeat sunt, sit cum vel quis, culpa voluptatem necessitatibus natus quidem ducimus architecto odit ipsam minima doloribus. Voluptates, iure.
-        </p>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga ex vitae sapiente, quo maiores modi perferendis neque iste unde repellendus totam. Ipsam porro nulla eligendi fuga quibusdam rerum vitae omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, deserunt, fuga quam voluptatem quibusdam illo, sit quia vitae ullam veniam nulla dicta! Totam expedita recusandae blanditiis pariatur amet dolores temporibus.
+            </p>
+            <picture>
+                <source media="(max-width: 635px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpeg">
+                <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+            </picture>
+            
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro mollitia fugit magni dolores facilis officiis eveniet, excepturi at sequi ducimus architecto. Incidunt maiores aut eius adipisci ea voluptas sequi cupiditate accusantium hic facere temporibus quasi ad, eaque totam, nam, ab omnis! Placeat sunt, sit cum vel quis, culpa voluptatem necessitatibus natus quidem ducimus architecto odit ipsam minima doloribus. Voluptates, iure.
+            </p>
+        </article>
     </main>
 </body>
 </html>
