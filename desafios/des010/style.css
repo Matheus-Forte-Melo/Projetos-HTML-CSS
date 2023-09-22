@@ -24,13 +24,6 @@
     font-weight: normal;
 }
 
-/* Seletor Global
-* {
-    margin: 0px;
-    padding: 0px;
-  }
-*/
-
 body {
     background-color: var(--cor0);
     margin: 0px;
@@ -58,7 +51,9 @@ p.header1, h1.header1 {
     color: white;
 }
 
+
 nav.header1 {
+
     text-align: left ;
     background-color: var(--cor3);
     box-shadow: 0px 3px 4px #154d2fb7; /* Nao usarei variaveis em cores de sombra pq pregas */
@@ -76,48 +71,58 @@ nav.header1 > a {
 nav.header1 > a:hover {
     background-color: var(--cor4);
     border-top-left-radius: 6px;
-    border-top-right-radius:     6px;
+    border-top-right-radius: 6px;
+}
+
+article {
+    padding: 20px;
 }
 
 /* Aqui configuro pelo Article, mas dava de configurar as mesmas coisas pelo main*/
-article {
-    padding: 20px;
+main {
     box-shadow: 0px 0px 5px #113d2561    ;
     background-color: white;
     min-width: 380px;
-    max-width: 1000px; /* A ser mudado */
+    max-width: 1000px;
     margin: auto;   
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-article#main > h1 {
+main h1 {
     color: var(--cor3);
     margin: 0px 20px 20px 20px;
     font: var(--fonteTituloH1);
 }
 
-article#main > h2 {
+main h2 {
     color: var(--cor3);
     margin: 20px 20px 20px 20px;
     font: var(--fonteTituloH2);
     background-image: linear-gradient(to right, var(--cor0), white);
 }
 
-article#main > p {
+main p {
     font: var(--fontePrincipal);
     text-indent: 25px;
     line-height: 1.25em;
 }
 
 div#video {
+    padding: 20px 20px 55% 20px; /* A medida de baixo esta ocupando 55% */
     background-color: var(--cor4);
+    position: relative;
+    margin: 0px -20px 0px -20px;
 }
 
 div#video iframe {
-    padding: 20px 0px 20px 10px;
-    display: block;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    width: 90%;
+    height: 92.3%;
     margin: auto;
+    display: block;
 }
 
 aside {
@@ -126,9 +131,9 @@ aside {
     margin: auto;
     margin-top: 20px;
     box-shadow: 1px 0px 2px #0c2d1c9f;
-}
+    }
 
-aside > p {
+    aside > p {
     text-indent: 20px;
     padding: 5px 20px 20px 20px;
 }
