@@ -10,13 +10,13 @@
         }    
 
 
-        div {   
+        div#astronauta {   
             /* Para usar top, left, blabla tem que botar a pos como absolute */
             margin: auto;
             position: absolute; /* -> -> Esse metodo abaixo vai ser um metodo meio antigo, agora tem flexbox para isso. */
-            top: 50%;
+            top: 45%;
             left: 50%;
-            transform: translate(-50%, -50%); /* The translate() CSS function repositions an element in the horizontal and/or vertical directions. */
+            transform: translate(-50%, -60%); /* The translate() CSS function repositions an element in the horizontal and/or vertical directions. */
             /* A gente esta ajustando a imagem para 50% da parte esquerda, e 50% do topo. Teoricamente era para a div ficar centralizada, mas nao está. Então a gente usa o transform para reposicionar o elemento  */
             
         }
@@ -29,11 +29,28 @@
             display: block;
         }
 
+        article {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 10px;
+            background-color: aliceblue;
+            min-width: 300px;
+            max-width: 550px;
+            border-radius: 10px 5px 10px 5px;
+        }
+
     </style>
 </head>
 <body>
-    <div>
+    <div id="astronauta">
         <img src="images/astronauta.png" alt="astronauta">
     </div>
+    <article>
+        <h1>Curiosidade Especial</h1>
+        <p>Júpiter possui uma poderosa magnetosfera, um campo magnético extremamente forte que o envolve, protegendo-o das partículas carregadas do vento solar e criando belas auroras em seus polos.</p>
+    </article>
 </body>
 </html>
