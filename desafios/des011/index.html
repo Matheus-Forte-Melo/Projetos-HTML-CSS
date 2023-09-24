@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronauta</title>
+    <style>
+        body {
+            background-image: url(images/espaco.jpg);
+        }    
+
+
+        div {   
+            /* Para usar top, left, blabla tem que botar a pos como absolute */
+            margin: auto;
+            position: absolute; /* -> -> Esse metodo abaixo vai ser um metodo meio antigo, agora tem flexbox para isso. */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* The translate() CSS function repositions an element in the horizontal and/or vertical directions. */
+            /* A gente esta ajustando a imagem para 50% da parte esquerda, e 50% do topo. Teoricamente era para a div ficar centralizada, mas nao está. Então a gente usa o transform para reposicionar o elemento  */
+            
+        }
+
+        img {
+            /* min-width: 300px;
+            max-width: 688px;
+            width: 85%; */
+            margin: auto;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/astronauta.png" alt="astronauta">
+    </div>
+</body>
+</html>
