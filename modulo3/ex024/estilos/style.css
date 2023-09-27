@@ -1,0 +1,58 @@
+body {
+    background-image: url(../imagens/wallpaper006.jpg);
+}
+
+div.quadrado {
+    background-color: lightcoral;
+    border-radius: 12px;
+    display: inline-block;
+    border: solid 1.5px black;
+    
+    width: 20%;
+    height: 300px;
+}
+
+div#q1 {
+    margin-left: 20%;
+    background-color: aquamarine;
+}
+
+div#q2 {
+    background-image: linear-gradient(to top, antiquewhite,  orange)  ;
+}
+
+div#q4 {
+    margin-left: 20%;
+    background-image: url(../imagens/pattern003.png);
+}
+
+div#q5 {
+    background-image: url(../imagens/wallpaper001.jpg);
+}
+
+div#q6 {
+    background-image: url(../imagens/wallpaper002.jpg);
+}
+
+div.botao {
+    width: 300px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.395);
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+a.botao {
+    display: block;
+    padding: 20px;
+    text-shadow: 0px 0px 0.6px rgba(0, 0, 0, 0.74);;
+    color: rgba(0, 0, 0, 0.74);
+    font: normal normal 1.5em 'Lucida Grande' , Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.botao:hover {
+    background-color: rgba(237, 235, 235, 0.831);
+}

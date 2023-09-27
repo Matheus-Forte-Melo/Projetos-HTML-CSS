@@ -1,0 +1,48 @@
+div.bloco {
+    border: 1px solid black;
+    height: 180px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-image: url(../imagens/wallpaper003.jpg); /* A aplicação padrão é esquerda em cima */
+}
+
+div#q1 {
+    background-position: left top
+}
+
+div#q2 {
+    background-position: left center;
+}
+
+div#q3 {
+    background-position: right bottom;
+}
+
+div#q4 {
+    background-position: center center;
+}
+
+div.botao {
+    width: 300px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.395);
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+a.botao {
+    display: block;
+    padding: 20px;
+    text-shadow: 0px 0px 0.6px rgba(0, 0, 0, 0.74);;
+    color: rgba(0, 0, 0, 0.74);
+    font: normal normal 1.5em 'Lucida Grande' , Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.botao:hover {
+    background-color: rgba(237, 235, 235, 0.831);
+}

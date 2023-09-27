@@ -53,8 +53,7 @@ p.header1, h1.header1 {
 
 
 nav.header1 {
-
-    text-align: left ;
+    text-align: left;
     background-color: var(--cor3);
     box-shadow: 0px 3px 4px #154d2fb7; /* Nao usarei variaveis em cores de sombra pq pregas */
 }
