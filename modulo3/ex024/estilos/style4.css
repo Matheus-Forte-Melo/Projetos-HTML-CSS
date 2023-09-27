@@ -3,5 +3,28 @@ body {
     background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
     background-repeat: no-repeat;
     background-size: 200px;
-    background-position: center bottom;
+    background-position: center top;
+}
+
+div.botao {
+    width: 300px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.395);
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+a.botao {
+    display: block;
+    padding: 20px;
+    text-shadow: 0px 0px 0.6px rgba(0, 0, 0, 0.74);;
+    color: rgba(0, 0, 0, 0.972);
+    font: normal normal 1.5em 'Lucida Grande' , Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.botao:hover {
+    background-color: rgba(237, 235, 235, 0.981);
 }

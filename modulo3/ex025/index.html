@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical</title>
+    <style>
+
+        body {
+            margin: 0px;
+        }
+
+        #container {
+            position: relative; /* todo pos padrão é relativo, o container precisa ser relativo */
+            height: 100vh;
+            background-color: blueviolet;
+            background-image: url(../ex024/imagens/target001.png);
+            background-size: 100% 100%;
+        }
+
+        #conteudo { 
+            /* margin: auto; */
+            position: absolute; /* Conteudo tem posicionamento absoluto */
+            height: 200px;
+            width: 200px;
+            background-color: greenyellow;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <main id="container"> <!--Aquilo que contem, nesse caso, conteúdo.-->
+        <article id="conteudo">
+
+        </article>
+    </main>
+</body>
+</html>

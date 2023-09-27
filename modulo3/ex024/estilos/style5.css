@@ -1,0 +1,16 @@
+body {
+    height: 99vh;
+    /* background-repeat: repeat-y; */
+    /* background-attachment: scroll; PADRÃO */
+   
+    background: whitesmoke url(../imagens/wallpaper002.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+main {
+    border-radius: 25px;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin: auto;
+    max-width: 700px;
+}
