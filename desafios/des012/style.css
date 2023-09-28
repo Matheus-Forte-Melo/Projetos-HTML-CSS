@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500&family=Passion+One:wght@400;700&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Special+Elite&family=UnifrakturMaguntia&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500&family=Passion+One:wght@400;700&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Special+Elite&family=Sriracha&family=UnifrakturMaguntia&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    
+    --fonteHeader: bold normal 10vw "Passion One", cursive;
+    --fonteHeaderFooter: normal normal 1em sans-serif;
+    --fonteVerso: normal normal 4vw "Sriracha", cursive;
+}
+
+* { 
+    margin: 0px;
+}
+
+header.head {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+header.head h1{
+    padding-top: 50px; /* Para completar a simetria */
+    font: var(--fonteHeader); 
+    font-variant: small-caps; /* faz com que as lowercase se pareçam uppercase, mas pequenas. */
+}
+
+header.head p {
+    font: var(--fonteHeaderFooter);
+    padding-bottom: 50px; /* Para completar a simetria */
+}
+
+header.head a, footer.foot a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+header.head a:hover, footer.foot a {
+    text-decoration: underline;
+}
+
+footer.foot {
+    font: var(--fonteHeaderFooter);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+section {
+    line-height: 1.85em;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section.verso {
+    font: var(--fonteVerso);
+}
+
+section.versoImg {
+    box-shadow: inset 20px 5px 60px rgba(0, 0, 0, 0.861);
+    color: white;
+    font: var(--fonteVerso);
+    background-position: right center;
+    background-size: cover  ;
+    background-attachment: fixed;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+section.versoImg p {    
+    background-color: rgba(0, 0, 0, 0.714);
+    display: inline-block;
+}
+
+section.versoImg#um {
+    background-image: url(imagens/background001.jpg);
+}
+
+section.versoImg#dois {
+    background-image: url(imagens/background002.jpg);
+}
