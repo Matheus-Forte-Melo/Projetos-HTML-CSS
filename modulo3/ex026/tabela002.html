@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Complexas</title>
+    <style>
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 480px;
+            height: 380px;
+        }
+
+        caption {
+            font-size: 0.85em;
+            margin-bottom: 3px;
+        }
+        
+        th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        thead, tfoot {
+            color: whitesmoke;
+            background-color: gray;
+        }
+
+        td {
+            padding: 2px 10px 2px 10px;
+            border: 1px solid black; 
+        }
+
+        td.numero {
+            text-align: right;
+        }
+
+        th#populacao {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelona</h1>
+    <table>
+        <caption>População das U.F's</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" id="populacao">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">44.420.459</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais </td>
+                <td class="numero">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.136.417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.443.208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">10.880.506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9.058.155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">8.791.688</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8.116.132</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7.609.601</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total</th>
+            <td class="numero"><strong>156,128,947</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>
