@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            
+        }
+
+        table {
+            display: inline-table;   
+            border-collapse: collapse;
+        }
+
+        th {
+            padding: 8px;
+            background-color: rgb(215, 241, 198);
+        }
+
+        td {
+            padding: 5px;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <table>
+        <thead>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Jogos</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Matheus</td>
+                <td>Half-Life</td>
+                <td>Portal</td>
+                <td>Hitman</td>
+            </tr>
+            <tr>
+                <td>Marcos</td>
+                <td>Counter-Strike</td>
+                <td>LoL</td>
+                <td>Stardew Valley</td>
+            </tr>
+            <tr>
+                <td>Kauã</td>
+                <td>Outer Wilds</td>
+                <td>Celeste</td>
+                <td>Hotline Miami</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Maria</td>
+                <td>Stardew Valley</td>
+                <td>The-Sims 4</td>
+                <td>Minecraft</td>
+            </tr>
+            <tr>
+                <td>Hannah</td>
+                <td>Valorant</td>
+                <td>Counter-Strike</td>
+                <td>Rainbow-Six</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>Free Fire</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+</body>
+</html>
