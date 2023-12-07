@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <link rel="shortcut icon" href="../icone.ico" type="image/x-icon">
+    <style>
+        iframe {
+            display: block;
+            height:350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de Iframes</h1>
+    <h2>Ancoras:</h2>
+    <p>
+        Acesssando o <a target="_blank" rel="external" href="https://matheus-forte-melo.github.io/cordel-moderno/">meu ultimo projeto</a>!
+    </p>
+    <h2>Iframe exterior:</h2>
+    <p>Acesse meu último projeto: 
+        <iframe src="https://matheus-forte-melo.github.io/cordel-moderno/" frameborder="0">
+            Seu navegador não é compátivel: Acesse <a target="_blank" href="https://matheus-forte-melo.github.io/cordel-moderno/"></a>
+        </iframe>
+        <!-- Scrolling: auto (PADRÃO), yes (SEMPRE DA DE ROLAS), no (NAO DA DE ROLAR) -->
+    </p>
+    <h2>Iframe local: </h2>
+        <p>Acesse meu último mini-projeto
+            <iframe src="index.html" frameborder="0"></iframe>
+        </p>
+   
+</body>
+</html>
