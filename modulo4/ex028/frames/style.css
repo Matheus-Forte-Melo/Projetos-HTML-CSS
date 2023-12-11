@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
