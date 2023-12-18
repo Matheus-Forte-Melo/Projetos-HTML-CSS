@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+    <link rel="shortcut icon" href="../../icone.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando atributos para formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> <!-- Autocomplete. -> ON para usar autocomplete nos input-->
+        <p>
+            <label for="iuser">Nome:</label>
+            <input type="text" name="user" id="iuser" required size="16" placeholder="Digite seu nome" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" minlength="8" maxlength="20" size="8" placeholder="Min: 8 "
+            autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <h1>Testanto mais tipos de formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="imedia">Digite a média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5">
+        </p>
+        
+        <p>
+            <label for="idata">Insira o período letivo: </label>
+            <input type="month" name="data" id="idata" value="2023-12"> <!-- Nao pega a data atual, teria q ter um scripts para isso-->
+        </p>
+
+        <p>
+            <label for="idata">Insira a data da prova:</label>
+            <input type="date" name="data" id="idata">
+        </p>
+
+        <p>
+            <label for="ihora">Insira o horario da prova:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+
+    <h1>Que tal mais tipos de formulários?</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^[0-9]{4,5}-[0-9]{4}$">
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </p>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>

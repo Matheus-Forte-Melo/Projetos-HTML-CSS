@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="../../icone.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- A Ação (que é um script) será disparada quando o botão de submit -->
+        <p><label for="inome">Nome:</label> <br> <input type="text" name="nome" id="inome"> 
+        </p> <!--Todos os campos de input precisam ser identificados. PHP utiliza mais o name, porem javascript mais o id-->
+        <p><label for="isobrenome">Sobrenome:</label> <br> <input type="text" name="sobrenome" id="isobrenome">
+        </p> <!--O atributo for recebe o ID-->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
