@@ -56,7 +56,7 @@
             <input type="reset" value="Clear">
         </p>
     </form>
-
+    
     <h1>Que tal mais tipos de formulários?</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
@@ -76,6 +76,60 @@
         </fieldset>
     </form>
 
+    <h1>Vai uns radio buttons e checkboxes ai?</h1>
+    <form action="cadastro.php" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="masc"><input type="radio" name="sexo" id="masc" checked>Masculino</label> 
+            <br> <!--botão de radio mesmo name-->
+            <label for="fem"><input type="radio" name="sexo" id="fem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Checkboxes</legend>
+            <p>Assinale seus jogos favorito da ValvE:</p>
+            <div>
+                <input type="checkbox" name="jogos" id="HL">
+                <label for="HL">Half-Life</label> <br>
+                <input type="checkbox" name="jogos" id="L4D">
+                <label for="L4D">Left 4 Dead</label> <br>
+                <input type="checkbox" name="jogos" id="P">
+                <label for="P">Portal</label> <br>
+                <input type="checkbox" name="jogos" id="CS">
+                <label for="CS">Counter-Strike</label> <br>
+                <input type="checkbox" name="jogos" id="D">
+                <label for="D">Dota</label> <br>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
+        </fieldset>
+    </form>
+
+    <h1>Alguns componentes extras</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <div>
+                <label for="icor">Escolha a cor:</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </div>
+
+            <div>
+                <label for="irange">Informe o nível: </label>
+                <input type="range" name="range" id="irange" min="1" max="5" value="1">
+            </div>
+
+            <div>
+                <label for="iarquivo">Foto do perfil: </label>
+                <input type="file" name="arquivo" id="iarquivo">
+            </div>
+        </fieldset>
+    </form>
     
 </body>
 </html>
