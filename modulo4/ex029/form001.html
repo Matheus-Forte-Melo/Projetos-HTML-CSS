@@ -130,6 +130,58 @@
             </div>
         </fieldset>
     </form>
+
+    <h1>Tira, tira eu não aguento mais &#128546;</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Alguns outros componentes</legend>
+
+            <p>
+                <label for="iestado">Selecione um estado:</label>
+                <select name="name" id="iestado" >
+                    
+                    <option value="" selected>---- Escolha ----</option>
+
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+
+                    <optgroup label="Sul">
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                    
+                    <optgroup label="Nordeste">
+                        <option value="BH">Bahia</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+                    
+                </select>
+                
+            </p>
+
+            <p>
+                <label for="iprof">Insua sua profissão</label>
+                <input type="text" name="profissao" id="iprof" list="iprofissao">
+                <datalist id="iprofissao">
+                    <option>Analista de Sistemas</option>
+                    <option value="ENGENHEIRO_SOFTWARE">Engenheiro de software</option>
+                    <option value="CIENTISTA_DADOS">Cientista de dados</option>
+                    <option>Especialista em cyber-segurança</option>
+                    <option>Implantador de sistemas</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="imsg"></label>
+                <textarea name="msg" id="imsg" cols="30" rows="10" style="resize: none;" maxlength="3000"></textarea>
+            </p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
     
 </body>
 </html>
