@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mais formulários</title>
+    <style>
+        form {
+            width: 850px;
+        }
+    </style>
 </head>
 <body>
     <form action="cadastro.php" method="post">
@@ -65,6 +70,68 @@
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
         </p>
+    </form>
+
+    <h1>Voltando de férias: Relembrando tudo que vi nesse capítulo</h1>
+    <form action="cadastro.php" method="post">
+
+
+        <fieldset>
+            <legend>Relembrando...</legend>
+            
+            <div>
+                <label for="itexto">Digite seu nome: </label>
+                <input type="text" name="texto" id="itexto" minlength="5" maxlength="100" required placeholder="Fulano da silva"> 
+            </div>
+            <div>
+                <label for="iescola">Insira sua escola: </label>
+                <select name="escola" id="iescola" required>
+
+                    <option value="" selected>-------------- Insira --------------</option>
+
+                    <optgroup label="Publicas">
+                        <option value="TRIBESS">E.E.B Alvino Tribess</option>
+                        <option value="RODOLPHO">E.E.B Rodolpho Tribess</option>
+                        <option value="MACHADO">E.E.B Machado de Assis</option>
+                    </optgroup>
+
+                    <optgroup label="Privadas">
+                        <option value="SENAI">Senai</option>
+                        <option value="JANGADA">Colégio Alfa Jangada</option>
+                        <option value="EVANGELICO">Colégio Evangélico</option>
+                    </optgroup>
+
+                </select>
+            </div>
+
+            <div>
+                Assinale a área de conhecimento: <br>
+                <input type="radio" name="area" id="humanas" required>
+                <label for="humanas">Humanas</label>
+                <input type="radio" name="area" id="exatas" required>
+                <label for="exatas">Exatas</label>
+            </div>
+
+            <div>
+                <label for="inota1">Primeira nota: <input type="number" name="nota1" id="inota1" required max="10" min="0" step="0.25" oninput="ioutput.innerHTML = (Number(inota1.value) + Number(inota2.value) + Number(inota3.value)) / 3"></label> <br>
+
+                <label for="inota2">Segunda nota: <input type="number" name="nota2" id="inota2" required max="10" min="0" step="0.25" oninput="ioutput.innerHTML = (Number(inota1.value) + Number(inota2.value) + Number(inota3.value)) / 3"></label> <br>
+
+                <label for="inota3">&nbsp;Terceira nota: <input type="number" name="nota3" id="inota3" required max="10" min="0" step="0.25" oninput="ioutput.innerHTML = (Number(inota1.value) + Number(inota2.value) + Number(inota3.value)) / 3"></label> <br>
+                
+                <br>
+                Média: 
+                <output name="output" id="ioutput">Defina as três notas!</output>
+                
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar média">
+                <input type="reset" value="Limpar campos">
+            </div>
+        </fieldset>
+
+       
     </form>
 </body>
 </html>
