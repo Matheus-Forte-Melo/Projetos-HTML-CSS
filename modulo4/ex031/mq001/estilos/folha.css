@@ -1,0 +1,22 @@
+/* Estilo para impressão */
+
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace; /* Fonte mais legível para folhas. Serifado ou monoespacada */
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através da página merda que o Matheus fez no dia 10/01/2024';
+}
