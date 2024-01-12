@@ -1,0 +1,57 @@
+/* Configuraçoes para outros breakpoints */
+
+
+@media print {
+    main {
+        font-family: 'Courier New', Courier, monospace;
+        border: solid black 1px;
+    }    
+
+    main::after {
+        content: "Você está visualizando uma impressão.";
+        text-decoration: overline;
+    }
+
+
+    #mobile { display: none; }
+    #tablet { display: none }
+    #desktop {display: none;}
+    #print {display: block;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #mobile { display: none; }
+    #tablet { display: block }
+    #desktop {display: none;}
+    #print {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #mobile { display: none; }
+    #tablet { display: none }
+    #desktop {display: block;}
+    #print {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 1201px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #mobile { display: none; }
+    #tablet { display: none }
+    #desktop {display: none;}
+    #print {display: none;}
+    #tv {display: block;}
+}
