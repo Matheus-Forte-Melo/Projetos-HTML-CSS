@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" media="all">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body id="body" class="no-transition">
     <header>
         <h1>GameNews</h1>
         <p>As melhores notícias sobre games você encontra aqui!</p>
@@ -27,8 +27,8 @@
     <main>
         <article>
             <h1>Half Life 2 RTX: Remake de Half Life 2?</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum porro harum blanditiis consectetur ab tempora facilis, eveniet sint quas officia numquam, quisquam autem! Aspernatur repellendus soluta harum vel recusandae, deleniti minus atque accusamus natus nam consectetur eius fugiat. Aliquid ea vitae quas exercitationem deserunt, nostrum eius id qui perferendis debitis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, laborum! Sunt magni officia odit expedita modi aliquam laudantium, quis tenetur at blanditiis labore nemo ab exercitationem architecto, sequi laboriosam repudiandae quos rerum dolores animi quo excepturi quaerat. Illo obcaecati aspernatur sint expedita sed mollitia iusto facilis excepturi perspiciatis nostrum commodi, inventore iste, non voluptas laboriosam sapiente beatae sequi, neque placeat voluptates ea quidem quas! Veritatis recusandae velit voluptate voluptatum non!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum porro harum blanditiis consectetur ab tempora facilis, eveniet sint quas officia numquam, quisquam autem! Aspernatur repellendus soluta haruaam vel recusandae, deleniti minus atque accusamus natus nam consectetur eius fugiat. Aliquid ea vitae quas exercitationem deserunt, nostrum eius id qui perferendis debitis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, laborum! Sunt magni officia odit expedita modi aliquam laudantium, quis tenetur at bldanditiis labore nemo ab exercitationem architecto, sequi laboriosam repudiandae quos rerum dolores animi quo excepturi quaerat. Illo obcaecati aspernatur sint expedita sed mollitia iusto facilis excepturi perspiciatis nostrum commodi, inventore iste, non voluptas laboriosam sapiente beatae sequi, neque placeat voluptatess ea quidem quas! Veritatis recusandae velit voluptate voluptatum non!</p>
         </article>
     </main>
 
@@ -42,6 +42,10 @@
         }
         
     }
+
+    function transitionAfterPageLoad() {
+    document.getElementById("body").classList.remove("no-transition"); /* A pagina ira carregar e as transições estarão desativadas, porém, se ativarão assim que a pagina terminar de carregar */
+}
         
     </script>
 </body>
