@@ -6,12 +6,14 @@
     <title>Artigo</title>
     <link rel="shortcut icon" href="../../../icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
         <h1>GameNews</h1>
         <p>As melhores notícias sobre games você encontra aqui!</p>
-        <menu>
+        <span id="icon-menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Valve</a></li>
                 <li><a href="#">Epic</a></li>
@@ -29,5 +31,18 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, laborum! Sunt magni officia odit expedita modi aliquam laudantium, quis tenetur at blanditiis labore nemo ab exercitationem architecto, sequi laboriosam repudiandae quos rerum dolores animi quo excepturi quaerat. Illo obcaecati aspernatur sint expedita sed mollitia iusto facilis excepturi perspiciatis nostrum commodi, inventore iste, non voluptas laboriosam sapiente beatae sequi, neque placeat voluptates ea quidem quas! Veritatis recusandae velit voluptate voluptatum non!</p>
         </article>
     </main>
+
+    <script>
+        
+    function clickMenu() {
+        if (itens.style.display === 'none') {
+            itens.style.display = 'block';
+        } else {
+            itens.style.display = 'none';
+        }
+        
+    }
+        
+    </script>
 </body>
 </html>
