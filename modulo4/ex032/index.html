@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!--Icones-->
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen">
+    <link rel="stylesheet" href="estilos/all.css" media="all">
+    <title>Tela Login</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div id="imagem"></div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar seu ambiente <strong>MyOutdeers</strong>.</p>
+
+                <form action="acao.php" method="get" autocomplete="on">
+                    <div class="input">
+                        <label for="iuser"><span class="material-symbols-outlined">person</span><input type="text" name="user" id="iuser" placeholder="Insira seu nome de usuário" required></label>
+                    </div>
+
+                    <div class="input">
+                        <label for="isenha"><span class="material-symbols-outlined">key</span><input type="password" name="senha" id="isenha" placeholder="Insira sua senha"  minlength="8" maxlength="20" required></label>
+                    </div>
+
+                    <div id="botoes">
+                        <input type="submit" value="Realizar Login" class="botao">
+                        <input type="button" value="Esqueci a Senha" class="botao">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

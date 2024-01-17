@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artigo</title>
     <link rel="shortcut icon" href="../../../icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" media="all">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" media="all">
+    
+    
 </head>
-<body id="body" class="no-transition">
+<body id="body" onresize="mudouTamanho()">
     <header>
         <h1>GameNews</h1>
         <p>As melhores notícias sobre games você encontra aqui!</p>
@@ -43,9 +45,16 @@
         
     }
 
-    function transitionAfterPageLoad() {
-    document.getElementById("body").classList.remove("no-transition"); /* A pagina ira carregar e as transições estarão desativadas, porém, se ativarão assim que a pagina terminar de carregar */
-}
+    function mudouTamanho() {
+        if (window.innerWidth >= 630) {
+            itens.style.display = 'block'
+        }
+        else {
+            itens.style.display = 'none'
+        }
+    }
+
+
         
     </script>
 </body>
