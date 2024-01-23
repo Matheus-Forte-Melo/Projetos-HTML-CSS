@@ -1,0 +1,51 @@
+
+@media screen and (min-width: 1220px){
+    section {
+        width: 1060px;
+        height: 375px;
+    }
+
+    div#formulario {
+        text-align: center;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#imagem {
+        width: 45%;
+        height: 100%;
+        position: absolute;
+        left: 55%;
+
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+
+    }
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1209px) {
+    section {
+        width: 70%;
+        max-width: 750px;
+        height: 335px;
+    }
+
+    div#formulario {
+        text-align: center;
+        width: 50%;
+        height: 65%;
+        position: absolute;
+        bottom: 25%;
+        left: 40%;
+    
+    }
+
+    div#imagem {
+        height: 100%;
+        width: 35%;
+
+        
+
+    }
+}
