@@ -23,6 +23,9 @@ section {
     background-color: white;
     box-shadow: 0px 0px 8.5px var(--cor-sombra);
     border-radius: 10px;
+    overflow: hidden; /* Tudo que exeder essa caixa ficará escondido */
+    
+
     width: 300px;
     height: 555px;
 
@@ -30,14 +33,14 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    transition: width 0.25s, height 1s;
 }
 
 div#formulario {    
     height: 50%;
     padding: 15px;
-
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    text-align: center;
 }
 
 div#imagem {
@@ -69,14 +72,14 @@ p {
     padding-bottom: 10px;
     background-color: var(--cor-input);
     
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
     
 }
 
 #iuser, #isenha {
     width: 85%;
-    height: 35px;
+    height: 45px;
 }
 
 strong {
