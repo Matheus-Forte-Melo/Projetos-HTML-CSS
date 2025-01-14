@@ -1,0 +1,29 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+footer {
+    font-family: Tahoma, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: gray;
+}
+
+a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.277);
+    color: white;
+    text-decoration: none;
+}
+

@@ -1,0 +1,2 @@
+# curiosidades-tecnologia
+ 

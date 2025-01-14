@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Special+Elite&family=UnifrakturMaguntia&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-1: #87d3aab1;
+    --cor0: #84E0AD;
+    --cor1: #35BF72;
+    --cor2: #2A9559;
+    --cor3: #1A5C38;
+    --cor4: #14472b;
+
+    --fontePrincipal: normal normal 1.1em Calibri, 'Trebuchet MS', sans-serif;
+    --fonteNormal: normal normal 1em "Arial Narrow", sans-serif;;
+    --fonteTituloH1: normal normal 2em "Tech";
+    --fonteTituloH2: normal normal 1.4em "Tech";
+    --fonteHeader: normal normal 3em "Bebas Neue", sans-serif;;
+}
+
+@font-face {
+    font-family: "Tech";
+    src: url(fontes/idroid.otf) format(opentype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: var(--cor0);
+    margin: 0px;
+}
+
+header.header1 {
+    padding: 20px 20px 20px 20px;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3));
+    text-align: center;   
+}
+
+h1.header1 {
+    font: var(--fonteHeader);
+    text-shadow: 1.6px 1.5px 1.5px #154d2fb1;
+}
+
+p.header1 {
+    text-shadow: 1px 1px 1px#14472b8e;
+    font: var(--fonteNormal);
+    margin: auto;
+}
+
+p.header1, h1.header1 {  
+    margin: 10px 0px 0px 0px;
+    color: white;
+}
+
+
+nav.header1 {
+
+    text-align: left ;
+    background-color: var(--cor3);
+    box-shadow: 0px 3px 4px #154d2fb7; /* Nao usarei variaveis em cores de sombra pq pregas */
+}
+
+nav.header1 > a {
+    display: inline-block;
+    color: var(--cor1);
+    font: var(--fonteNormal);
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+nav.header1 > a:hover {
+    background-color: var(--cor4);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+article {
+    padding: 20px;
+}
+
+/* Aqui configuro pelo Article, mas dava de configurar as mesmas coisas pelo main*/
+main {
+    box-shadow: 0px 0px 5px #113d2561    ;
+    background-color: white;
+    min-width: 380px;
+    max-width: 1200px;
+    margin: auto;   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor3);
+    margin: 0px 20px 20px 20px;
+    font: var(--fonteTituloH1);
+}
+
+main h2 {
+    color: var(--cor3);
+    margin: 20px 20px 20px 20px;
+    font: var(--fonteTituloH2);
+    background-image: linear-gradient(to right, var(--cor0), white);
+}
+
+main p {
+    font: var(--fontePrincipal);
+    text-indent: 25px;
+    line-height: 1.25em;
+}
+
+div#video {
+    padding: 20px 20px 55% 20px; /* A medida de baixo esta ocupando 55% */
+    background-color: var(--cor4);
+    position: relative;
+    margin: 0px -20px 0px -20px;
+}
+
+div#video iframe {
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    width: 90%;
+    height: 92.3%;
+    margin: auto;
+    display: block;
+}
+
+aside {
+    border-radius: 5px 5px 5px 5px;
+    background-color: var(--cor0);
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 1px 0px 2px #0c2d1c9f;
+    }
+
+    aside > p {
+    text-indent: 20px;
+    padding: 5px 20px 20px 20px;
+}
+
+ul {
+    column-gap: 40px;
+    list-style-image: url(imagens/list-icon.png);
+    columns: 2;
+}
+
+header#header2 {
+    border-radius: 5px 5px 0px 0px;
+    background-color: var(--cor2);
+    margin: 0px;
+}
+
+header#header2 p {
+    padding: 7px;
+    font: var(--fonteNormal);
+    color: white;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    background-color: var(--cor3);
+}
+
+article > p > strong {
+    padding: 3px 2px 2px 2px;
+    background-color: var(--cor0);
+    color: var(--cor3);
+}
+
+#header2 strong {
+    color: white;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+img.pequena {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+article a {
+    padding: 0.5px 4px 0.5px 4px;
+    background-color: var(--cor-1);
+    color: var(--cor3);
+}
+
+footer a {
+    color: var(--cor0);
+    text-decoration: none;
+}
+
+a.externo::after {
+    content: ' 📎';
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+    
